@@ -1,0 +1,1034 @@
+2025-09-10T03:47:01.674+05:30  INFO 113331 --- [product-service] [main] c.e.h.p.ProductServiceApplication        : Starting ProductServiceApplication using Java 22.0.2 with PID 113331 (/home/harsh/workspace/Spring/ecommerce-microservices/product-service/target/classes started by harsh in /home/harsh/workspace/Spring/ecommerce-microservices/product-service)
+2025-09-10T03:47:01.682+05:30 DEBUG 113331 --- [product-service] [main] c.e.h.p.ProductServiceApplication        : Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-10T03:47:01.688+05:30  INFO 113331 --- [product-service] [main] c.e.h.p.ProductServiceApplication        : The following 1 profile is active: "dev"
+2025-09-10T03:47:06.246+05:30  INFO 113331 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10T03:47:06.593+05:30  INFO 113331 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 275 ms. Found 1 JPA repository interface.
+2025-09-10T03:47:08.801+05:30  INFO 113331 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-10T03:47:08.854+05:30  INFO 113331 --- [product-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-10T03:47:08.855+05:30  INFO 113331 --- [product-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10T03:47:08.987+05:30  INFO 113331 --- [product-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-10T03:47:08.988+05:30  INFO 113331 --- [product-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7023 ms
+2025-09-10T03:47:09.152+05:30 DEBUG 113331 --- [product-service] [main] c.e.h.p.s.JwtAuthenticationFilter        : Filter 'jwtAuthenticationFilter' configured for use
+2025-09-10T03:47:09.609+05:30  INFO 113331 --- [product-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10T03:47:09.756+05:30  INFO 113331 --- [product-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-10T03:47:09.849+05:30  INFO 113331 --- [product-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-10T03:47:10.856+05:30  INFO 113331 --- [product-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10T03:47:10.974+05:30  INFO 113331 --- [product-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-10T03:47:11.500+05:30  INFO 113331 --- [product-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2025-09-10T03:47:11.507+05:30  INFO 113331 --- [product-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-10T03:47:11.595+05:30  WARN 113331 --- [product-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10T03:47:11.718+05:30  INFO 113331 --- [product-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10T03:47:13.366+05:30  INFO 113331 --- [product-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10T03:47:13.513+05:30  INFO 113331 --- [product-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10T03:47:14.381+05:30  WARN 113331 --- [product-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10T03:47:14.456+05:30  WARN 113331 --- [product-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 896e8216-4c5a-4e51-92f5-8e21919419b1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10T03:47:14.473+05:30  INFO 113331 --- [product-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10T03:47:15.454+05:30  INFO 113331 --- [product-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2025-09-10T03:47:15.719+05:30  INFO 113331 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-10T03:47:15.769+05:30  INFO 113331 --- [product-service] [main] c.e.h.p.ProductServiceApplication        : Started ProductServiceApplication in 15.744 seconds (process running for 16.693)
+2025-09-10T03:48:12.814+05:30  INFO 113331 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10T03:48:12.815+05:30  INFO 113331 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-10T03:48:12.820+05:30  INFO 113331 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-09-10T03:48:13.037+05:30 ERROR 113331 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-09-09T21:46:18Z. Current time: 2025-09-09T22:18:13Z, a difference of 1915034 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.ecom.harsh.productservice.security.JwtUtil.extractClaims(JwtUtil.java:39) ~[classes/:na]
+	at com.ecom.harsh.productservice.security.JwtUtil.getUsername(JwtUtil.java:23) ~[classes/:na]
+	at com.ecom.harsh.productservice.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:36) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:50:00.755+05:30 DEBUG 113331 --- [product-service] [http-nio-8081-exec-4] c.e.h.p.controller.ProductController     : Fetching all products
+2025-09-10T03:50:00.977+05:30  INFO 113331 --- [product-service] [http-nio-8081-exec-4] c.e.h.p.controller.ProductController     : Total products fetched: [ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null)]
+2025-09-10T03:56:04.214+05:30  INFO 113331 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10T03:56:04.249+05:30  INFO 113331 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-10T03:56:04.261+05:30  INFO 113331 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10T03:56:04.269+05:30  INFO 113331 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-10T03:56:04.281+05:30  INFO 113331 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-10 03:59:02 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:53)
+ | Starting ProductServiceApplication using Java 22.0.2 with PID 120175 (/home/harsh/workspace/Spring/ecommerce-microservices/product-service/target/classes started by harsh in /home/harsh/workspace/Spring/ecommerce-microservices/product-service)
+2025-09-10 03:59:02 | [main] | DEBUG | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:54)
+ | Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-10 03:59:02 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:658)
+ | The following 1 profile is active: "dev"
+2025-09-10 03:59:05 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:145)
+ | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 03:59:05 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:213)
+ | Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2025-09-10 03:59:07 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:111)
+ | Tomcat initialized with port 8081 (http)
+2025-09-10 03:59:07 | [main] | INFO  | o.a.catalina.core.StandardService | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting service [Tomcat]
+2025-09-10 03:59:07 | [main] | INFO  | o.a.catalina.core.StandardEngine | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 03:59:07 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring embedded WebApplicationContext
+2025-09-10 03:59:07 | [main] | INFO  | o.s.b.w.s.c.ServletWebServerApplicationContext | Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:301)
+ | Root WebApplicationContext: initialization completed in 5082 ms
+2025-09-10 03:59:07 | [main] | DEBUG | c.e.h.p.s.JwtAuthenticationFilter | Caller+0	 at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:240)
+ | Filter 'jwtAuthenticationFilter' configured for use
+2025-09-10 03:59:08 | [main] | INFO  | o.h.jpa.internal.util.LogHelper | Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+ | HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 03:59:08 | [main] | INFO  | org.hibernate.Version | Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+ | HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-10 03:59:08 | [main] | INFO  | o.h.c.i.RegionFactoryInitiator | Caller+0	 at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:50)
+ | HHH000026: Second-level cache disabled
+2025-09-10 03:59:08 | [main] | INFO  | o.s.o.j.p.SpringPersistenceUnitInfo | Caller+0	 at org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer(SpringPersistenceUnitInfo.java:87)
+ | No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 03:59:08 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109)
+ | HikariPool-1 - Starting...
+2025-09-10 03:59:09 | [main] | INFO  | com.zaxxer.hikari.pool.HikariPool | Caller+0	 at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:580)
+ | HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2025-09-10 03:59:09 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:122)
+ | HikariPool-1 - Start completed.
+2025-09-10 03:59:09 | [main] | WARN  | org.hibernate.orm.deprecation | Caller+0	 at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:153)
+ | HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 03:59:09 | [main] | INFO  | o.hibernate.orm.connections.pooling | Caller+0	 at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.logConnectionInfo(JdbcEnvironmentInitiator.java:163)
+ | HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 03:59:11 | [main] | INFO  | o.h.e.t.j.p.i.JtaPlatformInitiator | Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:59)
+ | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 03:59:11 | [main] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    create table products (
+        id bigint generated by default as identity,
+        created_at timestamp(6),
+        description varchar(500),
+        name varchar(100) not null,
+        price float(53) not null check (price>=1),
+        stock_quantity integer not null check (stock_quantity>=0),
+        updated_at timestamp(6),
+        primary key (id)
+    )
+2025-09-10 03:59:11 | [main] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:447)
+ | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 03:59:12 | [main] | WARN  | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:258)
+ | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 03:59:12 | [main] | WARN  | o.s.b.a.s.s.UserDetailsServiceAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:90)
+ | 
+
+Using generated security password: 9d6624dd-aebc-4ac9-9b72-b634c040cfab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 03:59:12 | [main] | INFO  | o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer | Caller+0	 at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:110)
+ | Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 03:59:13 | [main] | INFO  | o.s.b.a.h.H2ConsoleAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration$H2ConsoleLogger.log(H2ConsoleAutoConfiguration.java:133)
+ | H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2025-09-10 03:59:13 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:243)
+ | Tomcat started on port 8081 (http) with context path '/'
+2025-09-10 03:59:13 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)
+ | Started ProductServiceApplication in 12.867 seconds (process running for 13.605)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:532)
+ | Initializing Servlet 'dispatcherServlet'
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:554)
+ | Completed initialization in 7 ms
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:27 | [http-nio-8081-exec-1] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    insert 
+    into
+        products
+        (created_at, description, name, price, stock_quantity, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2025-09-10 03:59:33 | [http-nio-8081-exec-2] | DEBUG | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:41)
+ | Fetching all products
+2025-09-10 03:59:33 | [http-nio-8081-exec-2] | DEBUG | org.hibernate.SQL | Caller+0	 at org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement(SqlStatementLogger.java:135)
+ | 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.name,
+        p1_0.price,
+        p1_0.stock_quantity,
+        p1_0.updated_at 
+    from
+        products p1_0
+2025-09-10 03:59:33 | [http-nio-8081-exec-2] | INFO  | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:43)
+ | Total products fetched: [ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null)]
+2025-09-10 04:01:57 | [SpringApplicationShutdownHook] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully(GracefulShutdown.java:54)
+ | Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 04:01:57 | [tomcat-shutdown] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.doShutdown(GracefulShutdown.java:76)
+ | Graceful shutdown complete
+2025-09-10 04:01:57 | [SpringApplicationShutdownHook] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:660)
+ | Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:01:57 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:349)
+ | HikariPool-1 - Shutdown initiated...
+2025-09-10 04:01:57 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:351)
+ | HikariPool-1 - Shutdown completed.
+2025-09-10 04:03:40 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:53)
+ | Starting ProductServiceApplication using Java 22.0.2 with PID 123217 (/home/harsh/workspace/Spring/ecommerce-microservices/product-service/target/classes started by harsh in /home/harsh/workspace/Spring/ecommerce-microservices/product-service)
+2025-09-10 04:03:40 | [main] | DEBUG | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:54)
+ | Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-10 04:03:40 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:658)
+ | The following 1 profile is active: "dev"
+2025-09-10 04:03:43 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:145)
+ | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 04:03:43 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:213)
+ | Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2025-09-10 04:03:45 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:111)
+ | Tomcat initialized with port 8081 (http)
+2025-09-10 04:03:45 | [main] | INFO  | o.a.catalina.core.StandardService | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting service [Tomcat]
+2025-09-10 04:03:45 | [main] | INFO  | o.a.catalina.core.StandardEngine | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 04:03:45 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring embedded WebApplicationContext
+2025-09-10 04:03:45 | [main] | INFO  | o.s.b.w.s.c.ServletWebServerApplicationContext | Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:301)
+ | Root WebApplicationContext: initialization completed in 4920 ms
+2025-09-10 04:03:45 | [main] | DEBUG | c.e.h.p.s.JwtAuthenticationFilter | Caller+0	 at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:240)
+ | Filter 'jwtAuthenticationFilter' configured for use
+2025-09-10 04:03:46 | [main] | INFO  | o.h.jpa.internal.util.LogHelper | Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+ | HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 04:03:46 | [main] | INFO  | org.hibernate.Version | Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+ | HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-10 04:03:46 | [main] | INFO  | o.h.c.i.RegionFactoryInitiator | Caller+0	 at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:50)
+ | HHH000026: Second-level cache disabled
+2025-09-10 04:03:47 | [main] | INFO  | o.s.o.j.p.SpringPersistenceUnitInfo | Caller+0	 at org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer(SpringPersistenceUnitInfo.java:87)
+ | No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 04:03:47 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109)
+ | HikariPool-1 - Starting...
+2025-09-10 04:03:48 | [main] | INFO  | com.zaxxer.hikari.pool.HikariPool | Caller+0	 at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:580)
+ | HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2025-09-10 04:03:48 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:122)
+ | HikariPool-1 - Start completed.
+2025-09-10 04:03:48 | [main] | WARN  | org.hibernate.orm.deprecation | Caller+0	 at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:153)
+ | HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 04:03:48 | [main] | INFO  | o.hibernate.orm.connections.pooling | Caller+0	 at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.logConnectionInfo(JdbcEnvironmentInitiator.java:163)
+ | HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 04:03:49 | [main] | INFO  | o.h.e.t.j.p.i.JtaPlatformInitiator | Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:59)
+ | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 04:03:49 | [main] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:447)
+ | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:03:50 | [main] | WARN  | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:258)
+ | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 04:03:51 | [main] | WARN  | o.s.b.a.s.s.UserDetailsServiceAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:90)
+ | 
+
+Using generated security password: dc7c4a97-530e-4bfd-a6ab-3ee24380da1f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 04:03:51 | [main] | INFO  | o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer | Caller+0	 at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:110)
+ | Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 04:03:52 | [main] | INFO  | o.s.b.a.h.H2ConsoleAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration$H2ConsoleLogger.log(H2ConsoleAutoConfiguration.java:133)
+ | H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2025-09-10 04:03:53 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:243)
+ | Tomcat started on port 8081 (http) with context path '/'
+2025-09-10 04:03:53 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)
+ | Started ProductServiceApplication in 13.876 seconds (process running for 14.643)
+2025-09-10 04:04:08 | [http-nio-8081-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 04:04:08 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:532)
+ | Initializing Servlet 'dispatcherServlet'
+2025-09-10 04:04:08 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:554)
+ | Completed initialization in 3 ms
+2025-09-10 04:04:15 | [http-nio-8081-exec-2] | DEBUG | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:41)
+ | Fetching all products
+2025-09-10 04:04:15 | [http-nio-8081-exec-2] | DEBUG | c.e.h.p.service.ProductService | Caller+0	 at com.ecom.harsh.productservice.service.ProductService.getAllProducts(ProductService.java:36)
+ | Fetching all products from database
+2025-09-10 04:04:15 | [http-nio-8081-exec-2] | INFO  | c.e.h.p.service.ProductService | Caller+0	 at com.ecom.harsh.productservice.service.ProductService.getAllProducts(ProductService.java:38)
+ | Total products fetched from database: [Product(id=1, name=Apple iPhone 15, description=Latest iPhone model with A17 chip, 128GB storage, price=999.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.111677, updatedAt=2025-09-10T04:04:09.111743), Product(id=2, name=Samsung Galaxy S24, description=High-end Android phone with Snapdragon 8 Gen 3, price=899.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.297542, updatedAt=2025-09-10T04:04:09.297584), Product(id=3, name=Sony WH-1000XM5 Headphones, description=Noise-canceling over-ear headphones, price=349.99, stockQuantity=30, createdAt=2025-09-10T04:04:09.301631, updatedAt=2025-09-10T04:04:09.301664), Product(id=4, name=MacBook Pro 16-inch, description=Apple M3 Pro chip, 16GB RAM, 512GB SSD, price=2499.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.304460, updatedAt=2025-09-10T04:04:09.304492), Product(id=5, name=Dell XPS 13 Laptop, description=Intel i7, 16GB RAM, 512GB SSD, price=1299.99, stockQuantity=25, createdAt=2025-09-10T04:04:09.307332, updatedAt=2025-09-10T04:04:09.307362), Product(id=6, name=Amazon Echo Dot (5th Gen), description=Smart speaker with Alexa, price=49.99, stockQuantity=60, createdAt=2025-09-10T04:04:09.310035, updatedAt=2025-09-10T04:04:09.310063), Product(id=7, name=Google Pixel 8, description=Android phone with Google Tensor G3 chip, price=799.99, stockQuantity=35, createdAt=2025-09-10T04:04:09.312748, updatedAt=2025-09-10T04:04:09.312779), Product(id=8, name=Apple iPad Air, description=10.9-inch tablet with M1 chip, price=599.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.315579, updatedAt=2025-09-10T04:04:09.315609), Product(id=9, name=Samsung Galaxy Tab S9, description=High-end Android tablet, 11-inch display, price=699.99, stockQuantity=30, createdAt=2025-09-10T04:04:09.318259, updatedAt=2025-09-10T04:04:09.318293), Product(id=10, name=Canon EOS R6 Camera, description=Full-frame mirrorless camera with 4K video, price=2499.99, stockQuantity=15, createdAt=2025-09-10T04:04:09.324240, updatedAt=2025-09-10T04:04:09.324276), Product(id=11, name=Bose QuietComfort Earbuds, description=True wireless noise-canceling earbuds, price=279.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.328002, updatedAt=2025-09-10T04:04:09.328033), Product(id=12, name=Apple Watch Series 9, description=Smartwatch with fitness tracking, price=399.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.333441, updatedAt=2025-09-10T04:04:09.333469), Product(id=13, name=Fitbit Charge 6, description=Fitness tracker with heart rate monitor, price=149.99, stockQuantity=60, createdAt=2025-09-10T04:04:09.335976, updatedAt=2025-09-10T04:04:09.335998), Product(id=14, name=Sony PlayStation 5, description=Next-gen gaming console, price=499.99, stockQuantity=25, createdAt=2025-09-10T04:04:09.338192, updatedAt=2025-09-10T04:04:09.338222), Product(id=15, name=Xbox Series X, description=Next-gen gaming console by Microsoft, price=499.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.341098, updatedAt=2025-09-10T04:04:09.341131), Product(id=16, name=Nintendo Switch OLED, description=Hybrid gaming console with OLED screen, price=349.99, stockQuantity=30, createdAt=2025-09-10T04:04:09.344092, updatedAt=2025-09-10T04:04:09.344121), Product(id=17, name=Logitech MX Master 3, description=Advanced wireless mouse, price=99.99, stockQuantity=45, createdAt=2025-09-10T04:04:09.347033, updatedAt=2025-09-10T04:04:09.347065), Product(id=18, name=Apple AirPods Pro 2, description=Noise-canceling wireless earbuds, price=249.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.350085, updatedAt=2025-09-10T04:04:09.350115), Product(id=19, name=Samsung Galaxy Buds 3, description=True wireless earbuds, price=149.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.352640, updatedAt=2025-09-10T04:04:09.352670), Product(id=20, name=Kindle Paperwhite, description=E-reader with adjustable light, price=129.99, stockQuantity=35, createdAt=2025-09-10T04:04:09.355257, updatedAt=2025-09-10T04:04:09.355296), Product(id=21, name=HP Spectre x360 Laptop, description=Convertible laptop with touch screen, price=1399.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.357872, updatedAt=2025-09-10T04:04:09.357907), Product(id=22, name=Google Nest Hub, description=Smart display with Google Assistant, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.360335, updatedAt=2025-09-10T04:04:09.360361), Product(id=23, name=Ring Video Doorbell 4, description=Smart doorbell with video and motion detection, price=199.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.363109, updatedAt=2025-09-10T04:04:09.363140), Product(id=24, name=JBL Flip 6, description=Portable Bluetooth speaker, price=129.99, stockQuantity=60, createdAt=2025-09-10T04:04:09.365598, updatedAt=2025-09-10T04:04:09.365626), Product(id=25, name=Samsung QLED 55-inch TV, description=4K smart TV with QLED display, price=799.99, stockQuantity=25, createdAt=2025-09-10T04:04:09.371321, updatedAt=2025-09-10T04:04:09.371358), Product(id=26, name=LG OLED 65-inch TV, description=4K smart TV with OLED display, price=1499.99, stockQuantity=15, createdAt=2025-09-10T04:04:09.379936, updatedAt=2025-09-10T04:04:09.379973), Product(id=27, name=Sony Bravia 50-inch TV, description=4K smart TV with HDR, price=699.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.384205, updatedAt=2025-09-10T04:04:09.384238), Product(id=28, name=Apple HomePod mini, description=Smart speaker with Siri, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.389272, updatedAt=2025-09-10T04:04:09.389305), Product(id=29, name=Samsung Galaxy Watch 6, description=Smartwatch with fitness tracking, price=299.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.395126, updatedAt=2025-09-10T04:04:09.395161), Product(id=30, name=GoPro HERO 12, description=Action camera with 5K video, price=499.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.401395, updatedAt=2025-09-10T04:04:09.401431), Product(id=31, name=DJI Mini 4 Pro Drone, description=Compact drone with 4K camera, price=699.99, stockQuantity=15, createdAt=2025-09-10T04:04:09.407486, updatedAt=2025-09-10T04:04:09.407518), Product(id=32, name=Anker PowerCore 26800mAh, description=High-capacity portable charger, price=79.99, stockQuantity=60, createdAt=2025-09-10T04:04:09.412539, updatedAt=2025-09-10T04:04:09.412575), Product(id=33, name=Roku Streaming Stick 4K, description=Streaming device with 4K support, price=49.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.417774, updatedAt=2025-09-10T04:04:09.417808), Product(id=34, name=Western Digital 2TB SSD, description=Portable SSD for storage, price=199.99, stockQuantity=35, createdAt=2025-09-10T04:04:09.426097, updatedAt=2025-09-10T04:04:09.426136), Product(id=35, name=Seagate 4TB External HDD, description=High-capacity external hard drive, price=129.99, stockQuantity=25, createdAt=2025-09-10T04:04:09.431463, updatedAt=2025-09-10T04:04:09.431503), Product(id=36, name=Asus ROG Strix Laptop, description=Gaming laptop with RTX 4080, price=2499.99, stockQuantity=15, createdAt=2025-09-10T04:04:09.440737, updatedAt=2025-09-10T04:04:09.440958), Product(id=37, name=Lenovo ThinkPad X1 Carbon, description=Business laptop with Intel i7, price=1499.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.447091, updatedAt=2025-09-10T04:04:09.447162), Product(id=38, name=Apple Mac Mini M2, description=Compact desktop with M2 chip, price=699.99, stockQuantity=30, createdAt=2025-09-10T04:04:09.458511, updatedAt=2025-09-10T04:04:09.458545), Product(id=39, name=Microsoft Surface Pro 9, description=2-in-1 laptop with touch screen, price=999.99, stockQuantity=25, createdAt=2025-09-10T04:04:09.461674, updatedAt=2025-09-10T04:04:09.461706), Product(id=40, name=Samsung Galaxy Book 3, description=High-end Windows laptop, price=1199.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.474429, updatedAt=2025-09-10T04:04:09.474470), Product(id=41, name=Corsair K95 RGB Keyboard, description=Mechanical gaming keyboard, price=199.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.478475, updatedAt=2025-09-10T04:04:09.478507), Product(id=42, name=Razer DeathAdder V3, description=Gaming mouse with high precision, price=69.99, stockQuantity=60, createdAt=2025-09-10T04:04:09.483900, updatedAt=2025-09-10T04:04:09.483931), Product(id=43, name=Logitech C920 Webcam, description=HD webcam for streaming, price=79.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.489232, updatedAt=2025-09-10T04:04:09.489270), Product(id=44, name=Blue Yeti Microphone, description=USB microphone for recording, price=129.99, stockQuantity=35, createdAt=2025-09-10T04:04:09.495354, updatedAt=2025-09-10T04:04:09.495385), Product(id=45, name=Elgato Stream Deck MK.2, description=Control deck for streamers, price=149.99, stockQuantity=25, createdAt=2025-09-10T04:04:09.498559, updatedAt=2025-09-10T04:04:09.498593), Product(id=46, name=Netgear Nighthawk Router, description=High-speed Wi-Fi 6 router, price=249.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.502627, updatedAt=2025-09-10T04:04:09.502655), Product(id=47, name=TP-Link Archer AX6000, description=Wi-Fi 6 router with high coverage, price=299.99, stockQuantity=15, createdAt=2025-09-10T04:04:09.504948, updatedAt=2025-09-10T04:04:09.504967), Product(id=48, name=Eufy RoboVac 35C, description=Smart robotic vacuum cleaner, price=229.99, stockQuantity=30, createdAt=2025-09-10T04:04:09.507815, updatedAt=2025-09-10T04:04:09.507841), Product(id=49, name=iRobot Roomba i7+, description=Advanced robot vacuum with self-emptying bin, price=699.99, stockQuantity=20, createdAt=2025-09-10T04:04:09.510791, updatedAt=2025-09-10T04:04:09.510819), Product(id=50, name=Philips Hue Starter Kit, description=Smart lighting system with 4 bulbs, price=179.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.515510, updatedAt=2025-09-10T04:04:09.515541), Product(id=51, name=TP-Link Kasa Smart Plug, description=Wi-Fi smart plug for home automation, price=29.99, stockQuantity=60, createdAt=2025-09-10T04:04:09.518591, updatedAt=2025-09-10T04:04:09.518629), Product(id=52, name=Sony A7 IV Camera, description=Mirrorless full-frame camera with 4K video, price=2799.99, stockQuantity=10, createdAt=2025-09-10T04:04:09.522219, updatedAt=2025-09-10T04:04:09.522251), Product(id=53, name=Nikon Z6 II Camera, description=Full-frame mirrorless camera with high speed, price=1999.99, stockQuantity=15, createdAt=2025-09-10T04:04:09.525348, updatedAt=2025-09-10T04:04:09.525375), Product(id=54, name=Samsung Galaxy Watch 5, description=Smartwatch with fitness tracking, price=249.99, stockQuantity=40, createdAt=2025-09-10T04:04:09.528402, updatedAt=2025-09-10T04:04:09.528427), Product(id=55, name=Apple AirTag 4-pack, description=Item tracker for keys and devices, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:04:09.530900, updatedAt=2025-09-10T04:04:09.530926)]
+2025-09-10 04:04:15 | [http-nio-8081-exec-2] | INFO  | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:43)
+ | Total products fetched: [ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null)]
+2025-09-10 04:06:59 | [SpringApplicationShutdownHook] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully(GracefulShutdown.java:54)
+ | Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 04:06:59 | [tomcat-shutdown] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.doShutdown(GracefulShutdown.java:76)
+ | Graceful shutdown complete
+2025-09-10 04:06:59 | [SpringApplicationShutdownHook] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:660)
+ | Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:06:59 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:349)
+ | HikariPool-1 - Shutdown initiated...
+2025-09-10 04:06:59 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:351)
+ | HikariPool-1 - Shutdown completed.
+2025-09-10 04:07:06 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:53)
+ | Starting ProductServiceApplication using Java 22.0.2 with PID 125871 (/home/harsh/workspace/Spring/ecommerce-microservices/product-service/target/classes started by harsh in /home/harsh/workspace/Spring/ecommerce-microservices/product-service)
+2025-09-10 04:07:06 | [main] | DEBUG | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:54)
+ | Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-10 04:07:06 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:658)
+ | The following 1 profile is active: "dev"
+2025-09-10 04:07:10 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:145)
+ | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 04:07:10 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:213)
+ | Finished Spring Data repository scanning in 159 ms. Found 1 JPA repository interface.
+2025-09-10 04:07:13 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:111)
+ | Tomcat initialized with port 8081 (http)
+2025-09-10 04:07:13 | [main] | INFO  | o.a.catalina.core.StandardService | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting service [Tomcat]
+2025-09-10 04:07:13 | [main] | INFO  | o.a.catalina.core.StandardEngine | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 04:07:13 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring embedded WebApplicationContext
+2025-09-10 04:07:13 | [main] | INFO  | o.s.b.w.s.c.ServletWebServerApplicationContext | Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:301)
+ | Root WebApplicationContext: initialization completed in 6903 ms
+2025-09-10 04:07:13 | [main] | DEBUG | c.e.h.p.s.JwtAuthenticationFilter | Caller+0	 at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:240)
+ | Filter 'jwtAuthenticationFilter' configured for use
+2025-09-10 04:07:14 | [main] | INFO  | o.h.jpa.internal.util.LogHelper | Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+ | HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 04:07:14 | [main] | INFO  | org.hibernate.Version | Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+ | HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-10 04:07:14 | [main] | INFO  | o.h.c.i.RegionFactoryInitiator | Caller+0	 at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:50)
+ | HHH000026: Second-level cache disabled
+2025-09-10 04:07:15 | [main] | INFO  | o.s.o.j.p.SpringPersistenceUnitInfo | Caller+0	 at org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer(SpringPersistenceUnitInfo.java:87)
+ | No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 04:07:15 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109)
+ | HikariPool-1 - Starting...
+2025-09-10 04:07:15 | [main] | INFO  | com.zaxxer.hikari.pool.HikariPool | Caller+0	 at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:580)
+ | HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2025-09-10 04:07:15 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:122)
+ | HikariPool-1 - Start completed.
+2025-09-10 04:07:15 | [main] | WARN  | org.hibernate.orm.deprecation | Caller+0	 at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:153)
+ | HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 04:07:15 | [main] | INFO  | o.hibernate.orm.connections.pooling | Caller+0	 at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.logConnectionInfo(JdbcEnvironmentInitiator.java:163)
+ | HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 04:07:17 | [main] | INFO  | o.h.e.t.j.p.i.JtaPlatformInitiator | Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:59)
+ | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 04:07:17 | [main] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:447)
+ | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:07:18 | [main] | WARN  | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:258)
+ | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 04:07:18 | [main] | WARN  | o.s.b.a.s.s.UserDetailsServiceAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:90)
+ | 
+
+Using generated security password: 054a0d43-ce72-44aa-85b0-850eae4a2e19
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 04:07:18 | [main] | INFO  | o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer | Caller+0	 at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:110)
+ | Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 04:07:20 | [main] | INFO  | o.s.b.a.h.H2ConsoleAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration$H2ConsoleLogger.log(H2ConsoleAutoConfiguration.java:133)
+ | H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2025-09-10 04:07:20 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:243)
+ | Tomcat started on port 8081 (http) with context path '/'
+2025-09-10 04:07:20 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)
+ | Started ProductServiceApplication in 16.308 seconds (process running for 17.432)
+2025-09-10 04:07:25 | [http-nio-8081-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 04:07:25 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:532)
+ | Initializing Servlet 'dispatcherServlet'
+2025-09-10 04:07:25 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:554)
+ | Completed initialization in 3 ms
+2025-09-10 04:08:50 | [SpringApplicationShutdownHook] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully(GracefulShutdown.java:54)
+ | Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 04:08:50 | [tomcat-shutdown] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.doShutdown(GracefulShutdown.java:76)
+ | Graceful shutdown complete
+2025-09-10 04:08:50 | [SpringApplicationShutdownHook] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:660)
+ | Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:08:50 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:349)
+ | HikariPool-1 - Shutdown initiated...
+2025-09-10 04:08:50 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:351)
+ | HikariPool-1 - Shutdown completed.
+2025-09-10 04:08:56 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:53)
+ | Starting ProductServiceApplication using Java 22.0.2 with PID 127250 (/home/harsh/workspace/Spring/ecommerce-microservices/product-service/target/classes started by harsh in /home/harsh/workspace/Spring/ecommerce-microservices/product-service)
+2025-09-10 04:08:57 | [main] | DEBUG | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:54)
+ | Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-10 04:08:57 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:658)
+ | The following 1 profile is active: "dev"
+2025-09-10 04:08:59 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:145)
+ | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 04:08:59 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:213)
+ | Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2025-09-10 04:09:01 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:111)
+ | Tomcat initialized with port 8081 (http)
+2025-09-10 04:09:01 | [main] | INFO  | o.a.catalina.core.StandardService | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting service [Tomcat]
+2025-09-10 04:09:01 | [main] | INFO  | o.a.catalina.core.StandardEngine | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 04:09:01 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring embedded WebApplicationContext
+2025-09-10 04:09:01 | [main] | INFO  | o.s.b.w.s.c.ServletWebServerApplicationContext | Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:301)
+ | Root WebApplicationContext: initialization completed in 4304 ms
+2025-09-10 04:09:01 | [main] | DEBUG | c.e.h.p.s.JwtAuthenticationFilter | Caller+0	 at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:240)
+ | Filter 'jwtAuthenticationFilter' configured for use
+2025-09-10 04:09:02 | [main] | INFO  | o.h.jpa.internal.util.LogHelper | Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+ | HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 04:09:02 | [main] | INFO  | org.hibernate.Version | Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+ | HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-10 04:09:02 | [main] | INFO  | o.h.c.i.RegionFactoryInitiator | Caller+0	 at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:50)
+ | HHH000026: Second-level cache disabled
+2025-09-10 04:09:03 | [main] | INFO  | o.s.o.j.p.SpringPersistenceUnitInfo | Caller+0	 at org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer(SpringPersistenceUnitInfo.java:87)
+ | No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 04:09:03 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109)
+ | HikariPool-1 - Starting...
+2025-09-10 04:09:03 | [main] | INFO  | com.zaxxer.hikari.pool.HikariPool | Caller+0	 at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:580)
+ | HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2025-09-10 04:09:03 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:122)
+ | HikariPool-1 - Start completed.
+2025-09-10 04:09:03 | [main] | WARN  | org.hibernate.orm.deprecation | Caller+0	 at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:153)
+ | HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 04:09:03 | [main] | INFO  | o.hibernate.orm.connections.pooling | Caller+0	 at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.logConnectionInfo(JdbcEnvironmentInitiator.java:163)
+ | HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 04:09:05 | [main] | INFO  | o.h.e.t.j.p.i.JtaPlatformInitiator | Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:59)
+ | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 04:09:05 | [main] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:447)
+ | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:09:06 | [main] | WARN  | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:258)
+ | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 04:09:06 | [main] | WARN  | o.s.b.a.s.s.UserDetailsServiceAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:90)
+ | 
+
+Using generated security password: b12f78a3-31d5-4de4-adb3-c6ce719957d6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 04:09:06 | [main] | INFO  | o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer | Caller+0	 at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:110)
+ | Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 04:09:07 | [main] | INFO  | o.s.b.a.h.H2ConsoleAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration$H2ConsoleLogger.log(H2ConsoleAutoConfiguration.java:133)
+ | H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2025-09-10 04:09:08 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:243)
+ | Tomcat started on port 8081 (http) with context path '/'
+2025-09-10 04:09:08 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)
+ | Started ProductServiceApplication in 12.846 seconds (process running for 13.697)
+2025-09-10 04:09:15 | [http-nio-8081-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 04:09:15 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:532)
+ | Initializing Servlet 'dispatcherServlet'
+2025-09-10 04:09:15 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:554)
+ | Completed initialization in 2 ms
+2025-09-10 04:09:43 | [http-nio-8081-exec-3] | DEBUG | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:41)
+ | Fetching all products
+2025-09-10 04:09:43 | [http-nio-8081-exec-3] | DEBUG | c.e.h.p.service.ProductService | Caller+0	 at com.ecom.harsh.productservice.service.ProductService.getAllProducts(ProductService.java:36)
+ | Fetching all products from database
+2025-09-10 04:09:43 | [http-nio-8081-exec-3] | INFO  | c.e.h.p.service.ProductService | Caller+0	 at com.ecom.harsh.productservice.service.ProductService.getAllProducts(ProductService.java:38)
+ | Total products fetched from database: [Product(id=1, name=Apple iPhone 15, description=Latest iPhone model with A17 chip, 128GB storage, price=999.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.163604, updatedAt=2025-09-10T04:09:16.163668), Product(id=2, name=Samsung Galaxy S24, description=High-end Android phone with Snapdragon 8 Gen 3, price=899.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.326042, updatedAt=2025-09-10T04:09:16.326088), Product(id=3, name=Sony WH-1000XM5 Headphones, description=Noise-canceling over-ear headphones, price=349.99, stockQuantity=30, createdAt=2025-09-10T04:09:16.332269, updatedAt=2025-09-10T04:09:16.332309), Product(id=4, name=MacBook Pro 16-inch, description=Apple M3 Pro chip, 16GB RAM, 512GB SSD, price=2499.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.335145, updatedAt=2025-09-10T04:09:16.335177), Product(id=5, name=Dell XPS 13 Laptop, description=Intel i7, 16GB RAM, 512GB SSD, price=1299.99, stockQuantity=25, createdAt=2025-09-10T04:09:16.340699, updatedAt=2025-09-10T04:09:16.340733), Product(id=6, name=Amazon Echo Dot (5th Gen), description=Smart speaker with Alexa, price=49.99, stockQuantity=60, createdAt=2025-09-10T04:09:16.346226, updatedAt=2025-09-10T04:09:16.346262), Product(id=7, name=Google Pixel 8, description=Android phone with Google Tensor G3 chip, price=799.99, stockQuantity=35, createdAt=2025-09-10T04:09:16.351363, updatedAt=2025-09-10T04:09:16.351400), Product(id=8, name=Apple iPad Air, description=10.9-inch tablet with M1 chip, price=599.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.359065, updatedAt=2025-09-10T04:09:16.359107), Product(id=9, name=Samsung Galaxy Tab S9, description=High-end Android tablet, 11-inch display, price=699.99, stockQuantity=30, createdAt=2025-09-10T04:09:16.366338, updatedAt=2025-09-10T04:09:16.366397), Product(id=10, name=Canon EOS R6 Camera, description=Full-frame mirrorless camera with 4K video, price=2499.99, stockQuantity=15, createdAt=2025-09-10T04:09:16.373305, updatedAt=2025-09-10T04:09:16.373345), Product(id=11, name=Bose QuietComfort Earbuds, description=True wireless noise-canceling earbuds, price=279.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.379615, updatedAt=2025-09-10T04:09:16.379648), Product(id=12, name=Apple Watch Series 9, description=Smartwatch with fitness tracking, price=399.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.385301, updatedAt=2025-09-10T04:09:16.385337), Product(id=13, name=Fitbit Charge 6, description=Fitness tracker with heart rate monitor, price=149.99, stockQuantity=60, createdAt=2025-09-10T04:09:16.389376, updatedAt=2025-09-10T04:09:16.389409), Product(id=14, name=Sony PlayStation 5, description=Next-gen gaming console, price=499.99, stockQuantity=25, createdAt=2025-09-10T04:09:16.397022, updatedAt=2025-09-10T04:09:16.397065), Product(id=15, name=Xbox Series X, description=Next-gen gaming console by Microsoft, price=499.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.401474, updatedAt=2025-09-10T04:09:16.401506), Product(id=16, name=Nintendo Switch OLED, description=Hybrid gaming console with OLED screen, price=349.99, stockQuantity=30, createdAt=2025-09-10T04:09:16.406341, updatedAt=2025-09-10T04:09:16.406378), Product(id=17, name=Logitech MX Master 3, description=Advanced wireless mouse, price=99.99, stockQuantity=45, createdAt=2025-09-10T04:09:16.415287, updatedAt=2025-09-10T04:09:16.415329), Product(id=18, name=Apple AirPods Pro 2, description=Noise-canceling wireless earbuds, price=249.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.421267, updatedAt=2025-09-10T04:09:16.421309), Product(id=19, name=Samsung Galaxy Buds 3, description=True wireless earbuds, price=149.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.426179, updatedAt=2025-09-10T04:09:16.426220), Product(id=20, name=Kindle Paperwhite, description=E-reader with adjustable light, price=129.99, stockQuantity=35, createdAt=2025-09-10T04:09:16.433511, updatedAt=2025-09-10T04:09:16.433550), Product(id=21, name=HP Spectre x360 Laptop, description=Convertible laptop with touch screen, price=1399.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.440856, updatedAt=2025-09-10T04:09:16.440908), Product(id=22, name=Google Nest Hub, description=Smart display with Google Assistant, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.451576, updatedAt=2025-09-10T04:09:16.451619), Product(id=23, name=Ring Video Doorbell 4, description=Smart doorbell with video and motion detection, price=199.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.465606, updatedAt=2025-09-10T04:09:16.465653), Product(id=24, name=JBL Flip 6, description=Portable Bluetooth speaker, price=129.99, stockQuantity=60, createdAt=2025-09-10T04:09:16.471479, updatedAt=2025-09-10T04:09:16.471516), Product(id=25, name=Samsung QLED 55-inch TV, description=4K smart TV with QLED display, price=799.99, stockQuantity=25, createdAt=2025-09-10T04:09:16.482651, updatedAt=2025-09-10T04:09:16.482695), Product(id=26, name=LG OLED 65-inch TV, description=4K smart TV with OLED display, price=1499.99, stockQuantity=15, createdAt=2025-09-10T04:09:16.491990, updatedAt=2025-09-10T04:09:16.492035), Product(id=27, name=Sony Bravia 50-inch TV, description=4K smart TV with HDR, price=699.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.498390, updatedAt=2025-09-10T04:09:16.498431), Product(id=28, name=Apple HomePod mini, description=Smart speaker with Siri, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.505013, updatedAt=2025-09-10T04:09:16.505052), Product(id=29, name=Samsung Galaxy Watch 6, description=Smartwatch with fitness tracking, price=299.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.509629, updatedAt=2025-09-10T04:09:16.509668), Product(id=30, name=GoPro HERO 12, description=Action camera with 5K video, price=499.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.513829, updatedAt=2025-09-10T04:09:16.513862), Product(id=31, name=DJI Mini 4 Pro Drone, description=Compact drone with 4K camera, price=699.99, stockQuantity=15, createdAt=2025-09-10T04:09:16.518926, updatedAt=2025-09-10T04:09:16.518965), Product(id=32, name=Anker PowerCore 26800mAh, description=High-capacity portable charger, price=79.99, stockQuantity=60, createdAt=2025-09-10T04:09:16.525818, updatedAt=2025-09-10T04:09:16.525860), Product(id=33, name=Roku Streaming Stick 4K, description=Streaming device with 4K support, price=49.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.530685, updatedAt=2025-09-10T04:09:16.530722), Product(id=34, name=Western Digital 2TB SSD, description=Portable SSD for storage, price=199.99, stockQuantity=35, createdAt=2025-09-10T04:09:16.533862, updatedAt=2025-09-10T04:09:16.533904), Product(id=35, name=Seagate 4TB External HDD, description=High-capacity external hard drive, price=129.99, stockQuantity=25, createdAt=2025-09-10T04:09:16.537553, updatedAt=2025-09-10T04:09:16.537589), Product(id=36, name=Asus ROG Strix Laptop, description=Gaming laptop with RTX 4080, price=2499.99, stockQuantity=15, createdAt=2025-09-10T04:09:16.542043, updatedAt=2025-09-10T04:09:16.542114), Product(id=37, name=Lenovo ThinkPad X1 Carbon, description=Business laptop with Intel i7, price=1499.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.546029, updatedAt=2025-09-10T04:09:16.546088), Product(id=38, name=Apple Mac Mini M2, description=Compact desktop with M2 chip, price=699.99, stockQuantity=30, createdAt=2025-09-10T04:09:16.549732, updatedAt=2025-09-10T04:09:16.549760), Product(id=39, name=Microsoft Surface Pro 9, description=2-in-1 laptop with touch screen, price=999.99, stockQuantity=25, createdAt=2025-09-10T04:09:16.556914, updatedAt=2025-09-10T04:09:16.556959), Product(id=40, name=Samsung Galaxy Book 3, description=High-end Windows laptop, price=1199.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.565439, updatedAt=2025-09-10T04:09:16.565473), Product(id=41, name=Corsair K95 RGB Keyboard, description=Mechanical gaming keyboard, price=199.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.575395, updatedAt=2025-09-10T04:09:16.575425), Product(id=42, name=Razer DeathAdder V3, description=Gaming mouse with high precision, price=69.99, stockQuantity=60, createdAt=2025-09-10T04:09:16.579137, updatedAt=2025-09-10T04:09:16.579170), Product(id=43, name=Logitech C920 Webcam, description=HD webcam for streaming, price=79.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.582917, updatedAt=2025-09-10T04:09:16.582948), Product(id=44, name=Blue Yeti Microphone, description=USB microphone for recording, price=129.99, stockQuantity=35, createdAt=2025-09-10T04:09:16.585586, updatedAt=2025-09-10T04:09:16.585613), Product(id=45, name=Elgato Stream Deck MK.2, description=Control deck for streamers, price=149.99, stockQuantity=25, createdAt=2025-09-10T04:09:16.589855, updatedAt=2025-09-10T04:09:16.589895), Product(id=46, name=Netgear Nighthawk Router, description=High-speed Wi-Fi 6 router, price=249.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.592154, updatedAt=2025-09-10T04:09:16.592179), Product(id=47, name=TP-Link Archer AX6000, description=Wi-Fi 6 router with high coverage, price=299.99, stockQuantity=15, createdAt=2025-09-10T04:09:16.595871, updatedAt=2025-09-10T04:09:16.595913), Product(id=48, name=Eufy RoboVac 35C, description=Smart robotic vacuum cleaner, price=229.99, stockQuantity=30, createdAt=2025-09-10T04:09:16.602462, updatedAt=2025-09-10T04:09:16.602494), Product(id=49, name=iRobot Roomba i7+, description=Advanced robot vacuum with self-emptying bin, price=699.99, stockQuantity=20, createdAt=2025-09-10T04:09:16.607239, updatedAt=2025-09-10T04:09:16.607270), Product(id=50, name=Philips Hue Starter Kit, description=Smart lighting system with 4 bulbs, price=179.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.611847, updatedAt=2025-09-10T04:09:16.612724), Product(id=51, name=TP-Link Kasa Smart Plug, description=Wi-Fi smart plug for home automation, price=29.99, stockQuantity=60, createdAt=2025-09-10T04:09:16.615621, updatedAt=2025-09-10T04:09:16.615654), Product(id=52, name=Sony A7 IV Camera, description=Mirrorless full-frame camera with 4K video, price=2799.99, stockQuantity=10, createdAt=2025-09-10T04:09:16.619806, updatedAt=2025-09-10T04:09:16.619836), Product(id=53, name=Nikon Z6 II Camera, description=Full-frame mirrorless camera with high speed, price=1999.99, stockQuantity=15, createdAt=2025-09-10T04:09:16.622908, updatedAt=2025-09-10T04:09:16.622937), Product(id=54, name=Samsung Galaxy Watch 5, description=Smartwatch with fitness tracking, price=249.99, stockQuantity=40, createdAt=2025-09-10T04:09:16.630864, updatedAt=2025-09-10T04:09:16.630907), Product(id=55, name=Apple AirTag 4-pack, description=Item tracker for keys and devices, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:09:16.637265, updatedAt=2025-09-10T04:09:16.637295)]
+2025-09-10 04:09:43 | [http-nio-8081-exec-3] | INFO  | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:43)
+ | Total products fetched: [ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null)]
+2025-09-10 04:10:25 | [SpringApplicationShutdownHook] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully(GracefulShutdown.java:54)
+ | Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 04:10:25 | [tomcat-shutdown] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.doShutdown(GracefulShutdown.java:76)
+ | Graceful shutdown complete
+2025-09-10 04:10:25 | [SpringApplicationShutdownHook] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:660)
+ | Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:10:25 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:349)
+ | HikariPool-1 - Shutdown initiated...
+2025-09-10 04:10:25 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:351)
+ | HikariPool-1 - Shutdown completed.
+2025-09-10 04:11:23 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:53)
+ | Starting ProductServiceApplication using Java 22.0.2 with PID 128932 (/home/harsh/workspace/Spring/ecommerce-microservices/product-service/target/classes started by harsh in /home/harsh/workspace/Spring/ecommerce-microservices/product-service)
+2025-09-10 04:11:23 | [main] | DEBUG | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:54)
+ | Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-10 04:11:23 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:658)
+ | The following 1 profile is active: "dev"
+2025-09-10 04:11:26 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:145)
+ | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10 04:11:26 | [main] | INFO  | o.s.d.r.c.RepositoryConfigurationDelegate | Caller+0	 at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:213)
+ | Finished Spring Data repository scanning in 174 ms. Found 1 JPA repository interface.
+2025-09-10 04:11:28 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:111)
+ | Tomcat initialized with port 8081 (http)
+2025-09-10 04:11:28 | [main] | INFO  | o.a.catalina.core.StandardService | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting service [Tomcat]
+2025-09-10 04:11:28 | [main] | INFO  | o.a.catalina.core.StandardEngine | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-10 04:11:28 | [main] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring embedded WebApplicationContext
+2025-09-10 04:11:28 | [main] | INFO  | o.s.b.w.s.c.ServletWebServerApplicationContext | Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:301)
+ | Root WebApplicationContext: initialization completed in 4806 ms
+2025-09-10 04:11:28 | [main] | DEBUG | c.e.h.p.s.JwtAuthenticationFilter | Caller+0	 at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:240)
+ | Filter 'jwtAuthenticationFilter' configured for use
+2025-09-10 04:11:29 | [main] | INFO  | o.h.jpa.internal.util.LogHelper | Caller+0	 at org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31)
+ | HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10 04:11:29 | [main] | INFO  | org.hibernate.Version | Caller+0	 at org.hibernate.Version.logVersion(Version.java:44)
+ | HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-10 04:11:29 | [main] | INFO  | o.h.c.i.RegionFactoryInitiator | Caller+0	 at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:50)
+ | HHH000026: Second-level cache disabled
+2025-09-10 04:11:29 | [main] | INFO  | o.s.o.j.p.SpringPersistenceUnitInfo | Caller+0	 at org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer(SpringPersistenceUnitInfo.java:87)
+ | No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10 04:11:29 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109)
+ | HikariPool-1 - Starting...
+2025-09-10 04:11:30 | [main] | INFO  | com.zaxxer.hikari.pool.HikariPool | Caller+0	 at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:580)
+ | HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2025-09-10 04:11:30 | [main] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:122)
+ | HikariPool-1 - Start completed.
+2025-09-10 04:11:30 | [main] | WARN  | org.hibernate.orm.deprecation | Caller+0	 at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:153)
+ | HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-10 04:11:30 | [main] | INFO  | o.hibernate.orm.connections.pooling | Caller+0	 at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.logConnectionInfo(JdbcEnvironmentInitiator.java:163)
+ | HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-10 04:11:31 | [main] | INFO  | o.h.e.t.j.p.i.JtaPlatformInitiator | Caller+0	 at org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:59)
+ | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10 04:11:32 | [main] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:447)
+ | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:11:33 | [main] | WARN  | o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:258)
+ | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10 04:11:33 | [main] | WARN  | o.s.b.a.s.s.UserDetailsServiceAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:90)
+ | 
+
+Using generated security password: c5619ac1-d187-4ece-8a09-24c8a038706b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-10 04:11:33 | [main] | INFO  | o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer | Caller+0	 at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:110)
+ | Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-10 04:11:34 | [main] | INFO  | o.s.b.a.h.H2ConsoleAutoConfiguration | Caller+0	 at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration$H2ConsoleLogger.log(H2ConsoleAutoConfiguration.java:133)
+ | H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2025-09-10 04:11:34 | [main] | INFO  | o.s.b.w.e.tomcat.TomcatWebServer | Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:243)
+ | Tomcat started on port 8081 (http) with context path '/'
+2025-09-10 04:11:34 | [main] | INFO  | c.e.h.p.ProductServiceApplication | Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)
+ | Started ProductServiceApplication in 12.479 seconds (process running for 13.586)
+2025-09-10 04:11:41 | [http-nio-8081-exec-1] | INFO  | o.a.c.c.C.[Tomcat].[localhost].[/] | Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:168)
+ | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-10 04:11:41 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:532)
+ | Initializing Servlet 'dispatcherServlet'
+2025-09-10 04:11:41 | [http-nio-8081-exec-1] | INFO  | o.s.web.servlet.DispatcherServlet | Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:554)
+ | Completed initialization in 4 ms
+2025-09-10 04:11:53 | [http-nio-8081-exec-2] | DEBUG | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:41)
+ | Fetching all products
+2025-09-10 04:11:53 | [http-nio-8081-exec-2] | DEBUG | c.e.h.p.service.ProductService | Caller+0	 at com.ecom.harsh.productservice.service.ProductService.getAllProducts(ProductService.java:36)
+ | Fetching all products from database
+2025-09-10 04:11:53 | [http-nio-8081-exec-2] | INFO  | c.e.h.p.service.ProductService | Caller+0	 at com.ecom.harsh.productservice.service.ProductService.getAllProducts(ProductService.java:38)
+ | Total products fetched from database: [Product(id=1, name=Apple iPhone 15, description=Latest iPhone model with A17 chip, 128GB storage, price=999.99, stockQuantity=50, createdAt=2025-09-10T04:11:42.797628, updatedAt=2025-09-10T04:11:42.797690), Product(id=2, name=Samsung Galaxy S24, description=High-end Android phone with Snapdragon 8 Gen 3, price=899.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.114735, updatedAt=2025-09-10T04:11:43.114793), Product(id=3, name=Sony WH-1000XM5 Headphones, description=Noise-canceling over-ear headphones, price=349.99, stockQuantity=30, createdAt=2025-09-10T04:11:43.124638, updatedAt=2025-09-10T04:11:43.124677), Product(id=4, name=MacBook Pro 16-inch, description=Apple M3 Pro chip, 16GB RAM, 512GB SSD, price=2499.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.132633, updatedAt=2025-09-10T04:11:43.132672), Product(id=5, name=Dell XPS 13 Laptop, description=Intel i7, 16GB RAM, 512GB SSD, price=1299.99, stockQuantity=25, createdAt=2025-09-10T04:11:43.138277, updatedAt=2025-09-10T04:11:43.138313), Product(id=6, name=Amazon Echo Dot (5th Gen), description=Smart speaker with Alexa, price=49.99, stockQuantity=60, createdAt=2025-09-10T04:11:43.150240, updatedAt=2025-09-10T04:11:43.150284), Product(id=7, name=Google Pixel 8, description=Android phone with Google Tensor G3 chip, price=799.99, stockQuantity=35, createdAt=2025-09-10T04:11:43.156557, updatedAt=2025-09-10T04:11:43.156604), Product(id=8, name=Apple iPad Air, description=10.9-inch tablet with M1 chip, price=599.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.162260, updatedAt=2025-09-10T04:11:43.162299), Product(id=9, name=Samsung Galaxy Tab S9, description=High-end Android tablet, 11-inch display, price=699.99, stockQuantity=30, createdAt=2025-09-10T04:11:43.168094, updatedAt=2025-09-10T04:11:43.168136), Product(id=10, name=Canon EOS R6 Camera, description=Full-frame mirrorless camera with 4K video, price=2499.99, stockQuantity=15, createdAt=2025-09-10T04:11:43.181605, updatedAt=2025-09-10T04:11:43.181639), Product(id=11, name=Bose QuietComfort Earbuds, description=True wireless noise-canceling earbuds, price=279.99, stockQuantity=50, createdAt=2025-09-10T04:11:43.187481, updatedAt=2025-09-10T04:11:43.187516), Product(id=12, name=Apple Watch Series 9, description=Smartwatch with fitness tracking, price=399.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.192536, updatedAt=2025-09-10T04:11:43.192576), Product(id=13, name=Fitbit Charge 6, description=Fitness tracker with heart rate monitor, price=149.99, stockQuantity=60, createdAt=2025-09-10T04:11:43.207772, updatedAt=2025-09-10T04:11:43.207815), Product(id=14, name=Sony PlayStation 5, description=Next-gen gaming console, price=499.99, stockQuantity=25, createdAt=2025-09-10T04:11:43.211916, updatedAt=2025-09-10T04:11:43.211951), Product(id=15, name=Xbox Series X, description=Next-gen gaming console by Microsoft, price=499.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.221721, updatedAt=2025-09-10T04:11:43.221762), Product(id=16, name=Nintendo Switch OLED, description=Hybrid gaming console with OLED screen, price=349.99, stockQuantity=30, createdAt=2025-09-10T04:11:43.229957, updatedAt=2025-09-10T04:11:43.229997), Product(id=17, name=Logitech MX Master 3, description=Advanced wireless mouse, price=99.99, stockQuantity=45, createdAt=2025-09-10T04:11:43.234812, updatedAt=2025-09-10T04:11:43.234853), Product(id=18, name=Apple AirPods Pro 2, description=Noise-canceling wireless earbuds, price=249.99, stockQuantity=50, createdAt=2025-09-10T04:11:43.240900, updatedAt=2025-09-10T04:11:43.240937), Product(id=19, name=Samsung Galaxy Buds 3, description=True wireless earbuds, price=149.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.247114, updatedAt=2025-09-10T04:11:43.247154), Product(id=20, name=Kindle Paperwhite, description=E-reader with adjustable light, price=129.99, stockQuantity=35, createdAt=2025-09-10T04:11:43.252954, updatedAt=2025-09-10T04:11:43.252986), Product(id=21, name=HP Spectre x360 Laptop, description=Convertible laptop with touch screen, price=1399.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.267105, updatedAt=2025-09-10T04:11:43.267152), Product(id=22, name=Google Nest Hub, description=Smart display with Google Assistant, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:11:43.274212, updatedAt=2025-09-10T04:11:43.274253), Product(id=23, name=Ring Video Doorbell 4, description=Smart doorbell with video and motion detection, price=199.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.288933, updatedAt=2025-09-10T04:11:43.288974), Product(id=24, name=JBL Flip 6, description=Portable Bluetooth speaker, price=129.99, stockQuantity=60, createdAt=2025-09-10T04:11:43.299125, updatedAt=2025-09-10T04:11:43.299164), Product(id=25, name=Samsung QLED 55-inch TV, description=4K smart TV with QLED display, price=799.99, stockQuantity=25, createdAt=2025-09-10T04:11:43.308437, updatedAt=2025-09-10T04:11:43.308477), Product(id=26, name=LG OLED 65-inch TV, description=4K smart TV with OLED display, price=1499.99, stockQuantity=15, createdAt=2025-09-10T04:11:43.317310, updatedAt=2025-09-10T04:11:43.317348), Product(id=27, name=Sony Bravia 50-inch TV, description=4K smart TV with HDR, price=699.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.319804, updatedAt=2025-09-10T04:11:43.319836), Product(id=28, name=Apple HomePod mini, description=Smart speaker with Siri, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:11:43.332529, updatedAt=2025-09-10T04:11:43.332564), Product(id=29, name=Samsung Galaxy Watch 6, description=Smartwatch with fitness tracking, price=299.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.339784, updatedAt=2025-09-10T04:11:43.339831), Product(id=30, name=GoPro HERO 12, description=Action camera with 5K video, price=499.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.346251, updatedAt=2025-09-10T04:11:43.346286), Product(id=31, name=DJI Mini 4 Pro Drone, description=Compact drone with 4K camera, price=699.99, stockQuantity=15, createdAt=2025-09-10T04:11:43.353079, updatedAt=2025-09-10T04:11:43.353110), Product(id=32, name=Anker PowerCore 26800mAh, description=High-capacity portable charger, price=79.99, stockQuantity=60, createdAt=2025-09-10T04:11:43.360795, updatedAt=2025-09-10T04:11:43.360846), Product(id=33, name=Roku Streaming Stick 4K, description=Streaming device with 4K support, price=49.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.379074, updatedAt=2025-09-10T04:11:43.379119), Product(id=34, name=Western Digital 2TB SSD, description=Portable SSD for storage, price=199.99, stockQuantity=35, createdAt=2025-09-10T04:11:43.391723, updatedAt=2025-09-10T04:11:43.391762), Product(id=35, name=Seagate 4TB External HDD, description=High-capacity external hard drive, price=129.99, stockQuantity=25, createdAt=2025-09-10T04:11:43.399808, updatedAt=2025-09-10T04:11:43.399848), Product(id=36, name=Asus ROG Strix Laptop, description=Gaming laptop with RTX 4080, price=2499.99, stockQuantity=15, createdAt=2025-09-10T04:11:43.407460, updatedAt=2025-09-10T04:11:43.410870), Product(id=37, name=Lenovo ThinkPad X1 Carbon, description=Business laptop with Intel i7, price=1499.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.417162, updatedAt=2025-09-10T04:11:43.417195), Product(id=38, name=Apple Mac Mini M2, description=Compact desktop with M2 chip, price=699.99, stockQuantity=30, createdAt=2025-09-10T04:11:43.427658, updatedAt=2025-09-10T04:11:43.427691), Product(id=39, name=Microsoft Surface Pro 9, description=2-in-1 laptop with touch screen, price=999.99, stockQuantity=25, createdAt=2025-09-10T04:11:43.439478, updatedAt=2025-09-10T04:11:43.439538), Product(id=40, name=Samsung Galaxy Book 3, description=High-end Windows laptop, price=1199.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.448283, updatedAt=2025-09-10T04:11:43.448324), Product(id=41, name=Corsair K95 RGB Keyboard, description=Mechanical gaming keyboard, price=199.99, stockQuantity=50, createdAt=2025-09-10T04:11:43.456768, updatedAt=2025-09-10T04:11:43.456805), Product(id=42, name=Razer DeathAdder V3, description=Gaming mouse with high precision, price=69.99, stockQuantity=60, createdAt=2025-09-10T04:11:43.465772, updatedAt=2025-09-10T04:11:43.465804), Product(id=43, name=Logitech C920 Webcam, description=HD webcam for streaming, price=79.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.477389, updatedAt=2025-09-10T04:11:43.477426), Product(id=44, name=Blue Yeti Microphone, description=USB microphone for recording, price=129.99, stockQuantity=35, createdAt=2025-09-10T04:11:43.495163, updatedAt=2025-09-10T04:11:43.495203), Product(id=45, name=Elgato Stream Deck MK.2, description=Control deck for streamers, price=149.99, stockQuantity=25, createdAt=2025-09-10T04:11:43.508080, updatedAt=2025-09-10T04:11:43.508135), Product(id=46, name=Netgear Nighthawk Router, description=High-speed Wi-Fi 6 router, price=249.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.516866, updatedAt=2025-09-10T04:11:43.520036), Product(id=47, name=TP-Link Archer AX6000, description=Wi-Fi 6 router with high coverage, price=299.99, stockQuantity=15, createdAt=2025-09-10T04:11:43.522679, updatedAt=2025-09-10T04:11:43.522709), Product(id=48, name=Eufy RoboVac 35C, description=Smart robotic vacuum cleaner, price=229.99, stockQuantity=30, createdAt=2025-09-10T04:11:43.536987, updatedAt=2025-09-10T04:11:43.537028), Product(id=49, name=iRobot Roomba i7+, description=Advanced robot vacuum with self-emptying bin, price=699.99, stockQuantity=20, createdAt=2025-09-10T04:11:43.539743, updatedAt=2025-09-10T04:11:43.539796), Product(id=50, name=Philips Hue Starter Kit, description=Smart lighting system with 4 bulbs, price=179.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.562085, updatedAt=2025-09-10T04:11:43.562119), Product(id=51, name=TP-Link Kasa Smart Plug, description=Wi-Fi smart plug for home automation, price=29.99, stockQuantity=60, createdAt=2025-09-10T04:11:43.569747, updatedAt=2025-09-10T04:11:43.569780), Product(id=52, name=Sony A7 IV Camera, description=Mirrorless full-frame camera with 4K video, price=2799.99, stockQuantity=10, createdAt=2025-09-10T04:11:43.580848, updatedAt=2025-09-10T04:11:43.580887), Product(id=53, name=Nikon Z6 II Camera, description=Full-frame mirrorless camera with high speed, price=1999.99, stockQuantity=15, createdAt=2025-09-10T04:11:43.589595, updatedAt=2025-09-10T04:11:43.589629), Product(id=54, name=Samsung Galaxy Watch 5, description=Smartwatch with fitness tracking, price=249.99, stockQuantity=40, createdAt=2025-09-10T04:11:43.598259, updatedAt=2025-09-10T04:11:43.598289), Product(id=55, name=Apple AirTag 4-pack, description=Item tracker for keys and devices, price=99.99, stockQuantity=50, createdAt=2025-09-10T04:11:43.606040, updatedAt=2025-09-10T04:11:43.606074)]
+2025-09-10 04:11:53 | [http-nio-8081-exec-2] | INFO  | c.e.h.p.controller.ProductController | Caller+0	 at com.ecom.harsh.productservice.controller.ProductController.getAllProducts(ProductController.java:43)
+ | Total products fetched: [ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null), ProductDTO(id=null, name=null, description=null, price=null, stockQuantity=null)]
+2025-09-10 04:26:04 | [SpringApplicationShutdownHook] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully(GracefulShutdown.java:54)
+ | Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-10 04:26:04 | [tomcat-shutdown] | INFO  | o.s.b.w.e.tomcat.GracefulShutdown | Caller+0	 at org.springframework.boot.web.embedded.tomcat.GracefulShutdown.doShutdown(GracefulShutdown.java:76)
+ | Graceful shutdown complete
+2025-09-10 04:26:04 | [SpringApplicationShutdownHook] | INFO  | o.s.o.j.LocalContainerEntityManagerFactoryBean | Caller+0	 at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy(AbstractEntityManagerFactoryBean.java:660)
+ | Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10 04:26:04 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:349)
+ | HikariPool-1 - Shutdown initiated...
+2025-09-10 04:26:04 | [SpringApplicationShutdownHook] | INFO  | com.zaxxer.hikari.HikariDataSource | Caller+0	 at com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:351)
+ | HikariPool-1 - Shutdown completed.
